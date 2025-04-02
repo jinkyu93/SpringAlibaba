@@ -4,7 +4,6 @@ spring:
 
 server:
   port: 8080
-
-alibaba:
-  access-key-id: your-access-key-id
-  access-key-secret: your-access-key-secret
+  security:
+    cors:
+      allowedOrigins: ${DCM_CORS_ALLOWED_ORIGINS:*}
